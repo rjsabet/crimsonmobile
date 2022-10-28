@@ -1,4 +1,4 @@
-import { Text, View, Image, ScrollView, StyleSheet, Pressable } from 'react-native'
+import { Text, View, Image, ScrollView, StyleSheet, Pressable, Switch } from 'react-native'
 import * as React from 'react'
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import { BottomSheet } from './BottomSheet'
@@ -39,7 +39,7 @@ const Settings = ({isActive, notActive, navigation}) => {
                 <Text style={styles.header}>Accounts</Text>
             </View>
             <BottomSheet show={showBottomSheet} height={hp('93%')} onOuterClick={hide}>
-                <CreateAccountsWin />
+                
             </BottomSheet>
             <NewAccountBtn onPress={showWin}/>
             <View style={styles.bContainer}>
