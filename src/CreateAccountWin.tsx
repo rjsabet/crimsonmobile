@@ -33,7 +33,7 @@ const CreateAccountsWin = () => {
         </View>
     )
 }
- 
+  
 
 const styles = StyleSheet.create({
     taskWin: {
