@@ -5,6 +5,7 @@ import { BottomSheet } from './BottomSheet'
 import MenuButton from '../components/MenuButton'
 import CreateAccountsWin from './CreateAccountWin'
 import NewAccountBtn from '../components/NewAccountBtn'
+import SettingsToggles from '../components/SettingsToggles'
 import { useFonts } from 'expo-font'
 
 const Settings = ({isActive, notActive, navigation}) => {
@@ -36,12 +37,9 @@ const Settings = ({isActive, notActive, navigation}) => {
     return (
         <View style={styles.container}>
             <View style={styles.tContainer}>
-                <Text style={styles.header}>Accounts</Text>
+                <Text style={styles.header}>Settings</Text>
             </View>
-            <BottomSheet show={showBottomSheet} height={hp('93%')} onOuterClick={hide}>
-                
-            </BottomSheet>
-            <NewAccountBtn onPress={showWin}/>
+            <SettingsToggles />
             <View style={styles.bContainer}>
                 <MenuButton pressDash={nav2dash} pressAcc={nav2acc} pressProx={nav2prox} pressSet={nav2set} actDash={0.4} actAcc={1} actProx={0.4} actSet={0.4}/>
             </View>
