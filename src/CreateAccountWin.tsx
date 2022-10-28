@@ -27,9 +27,8 @@ const CreateAccountsWin = () => {
             <CheckoutInputs />
             <PaymentInputs />
             <TouchableOpacity style={styles.cancelBtn}>
-                <Text>Cancel</Text>
+                <Text style={styles.cancelText}>Cancel</Text>
             </TouchableOpacity>
-
         </View>
     )
 }
@@ -65,6 +64,10 @@ const styles = StyleSheet.create({
         top: hp('13%'),
         left: hp('0%'),
         paddingLeft: 19,
+    },
+    cancelBtn: {
+        fontFamily: 'Notobold',
+        fontSize: 10,
     },
     accName: {
         top: hp('1%'),
