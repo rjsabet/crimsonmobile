@@ -16,7 +16,7 @@ const useAnimatedBottom = (show: boolean, height: number = DEFAULT_HEIGHT) => {
           Animated.timing(animatedValue.current, {
             toValue: 1,
             duration: 350,
-            // Accelerate then decelerate - https://cubic-bezier.com/#.28,0,.63,1
+            // Accelerate then decelerate - ref: https://cubic-bezier.com/#.28,0,.63,1
             easing: Easing.bezier(0.28, 0, 0.63, 1),
             useNativeDriver: false, // 'bottom' is not supported by native animated module
           }).start()
@@ -24,7 +24,7 @@ const useAnimatedBottom = (show: boolean, height: number = DEFAULT_HEIGHT) => {
           Animated.timing(animatedValue.current, {
             toValue: 0,
             duration: 250,
-            // Accelerate - https://easings.net/#easeInCubic
+            // Accelerate - ref: https://easings.net/#easeInCubic
             easing: Easing.cubic,
             useNativeDriver: false,
           }).start()
@@ -54,7 +54,7 @@ interface Props {
   
     return (
       <>
-        {/* Outer semitransparent overlay - remove it if you don't want it */}
+        {/* Might remove later */}
         {show && (
           <Pressable
             onPress={onOuterClick}
