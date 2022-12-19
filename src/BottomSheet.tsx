@@ -82,8 +82,6 @@ interface Props {
       position: 'absolute',
       width: '100%',
       zIndex: 1,
-      // Here you can set a common style for all bottom sheets, or nothing if you
-      // want different designs
       backgroundColor: '#2A2836',
       borderRadius: 39,
     },
